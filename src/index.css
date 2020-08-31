@@ -3,16 +3,22 @@
   margin: 50px auto;
   width: 600px;
   height: 600px;
-  border: 2px solid #000;
-  background-color: black;
+  border: 3px solid #920075;
+  background: rgb(84, 19, 136);
+  background: linear-gradient(
+    30deg,
+    rgba(84, 19, 136, 1) 0%,
+    rgba(84, 13, 110, 1) 50%,
+    rgba(121, 30, 148, 1) 100%
+  );
 }
 
 .snake-dot {
   position: absolute;
   width: 2%;
   height: 2%;
-  background-color: #fff;
-  border: 1px solid #000;
+  background-color: #d40078;
+  border: 1px solid #f6019d;
   z-index: 2;
 }
 
@@ -20,7 +26,7 @@
   position: absolute;
   width: 2%;
   height: 2%;
-  background-color: magenta;
-  border: 1px solid magenta;
+  background-color: #2de2e6;
+  border: 1px solid #2de2a6;
   z-index: 1;
 }
