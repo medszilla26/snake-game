@@ -12,7 +12,7 @@ const getRandomCoordinates = () => {
 
 const initialState = {
   food: getRandomCoordinates(),
-  speed: 200,
+  speed: 100,
   direction: "RIGHT",
   snakeDots: [
     [0, 0],
@@ -123,16 +123,19 @@ class App extends Component {
   }
 
   onGameOver() {
-    alert(`GAME OVER. FINAL SCORE: ${this.state.snakeDots.length}`);
+    alert(`FINAL SCORE: ${this.state.snakeDots.length * 100} points`);
     this.setState(initialState);
   }
 
   render() {
     return (
-      <div className="game-area">
-        <Snake snakeDots={this.state.snakeDots} />
-        <Food dot={this.state.food} />
-      </div>
+      <React.Fragment>
+        <div className="game-name">Outrun Snake v1</div>
+        <div className="game-area">
+          <Snake snakeDots={this.state.snakeDots} />
+          <Food dot={this.state.food} />
+        </div>
+      </React.Fragment>
     );
   }
 }

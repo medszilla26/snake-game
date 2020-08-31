@@ -1,3 +1,13 @@
+.game-name {
+  position: relative;
+  text-align: center;
+  margin: 50px auto;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #920075;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 .game-area {
   position: relative;
   margin: 50px auto;
